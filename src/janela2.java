@@ -13,7 +13,7 @@ public class janela2 extends JFrame {
         setResizable(false); // Impede o redimensionamento da janela
 
         // Imagem Panel2
-        ImageIcon imagem = new ImageIcon(janela2.class.getResource("img\\img4.png"));
+        ImageIcon imagem = new ImageIcon(janela2.class.getResource("img\\img2.png"));
         JLabel img = new JLabel(imagem);
 
         // Criação de um Menu
