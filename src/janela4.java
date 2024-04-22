@@ -50,22 +50,29 @@ public class janela4 extends JFrame {
         panel1.setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
 
         // Label1 - Título "O que é sustentabilidade?"
-        JLabel label = new JLabel("Garimpo Ilegal");
+        JLabel label = new JLabel("<html>Garimpo Ilegal - Amazônia</html>");
         label.setFont(new Font("Calibri", Font.BOLD, 28));
-        label.setForeground(new Color(0,0,0));
+        label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
-        // Adiciona a Label1 ao JPanel
-        panel1.add(label);
-
-        // Label 2 - Sobre sustentabilidade
-        JLabel novaLabel = new JLabel("<html>A sustentabilidade visa garantir o uso adequado<br>dos recursos naturais para as futuras gerações,<br>equilibrando o desenvolvimento econômico<br>com a preservação do meio ambiente.<br>Envolve práticas como reciclagem, reutilização<br>e economia de recursos, sendo uma ação global<br>essencial em nossas atividades diárias.</html>");
+        // Label 2 - Sobre Garimpo ilegal
+        JLabel novaLabel = new JLabel("<html>O garimpo ilegal na Amazônia é uma atividade que tem causado sérios danos ao meio ambiente e à vida de muitas pessoas que dependem da floresta para sobreviver. É uma prática onde pessoas exploram áreas de forma não autorizada, muitas vezes sem considerar os impactos ambientais e sociais.\n</html>");
         novaLabel.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
+        // Label 3 -
+        JLabel novaLabel2 = new JLabel("<html>Combater o garimpo ilegal na Amazônia não é apenas uma questão ambiental, mas também uma questão de justiça social e respeito aos direitos humanos. É essencial que governos, organizações não governamentais e a sociedade em geral se unam para proteger a Amazônia e garantir o sustento e o bem-estar das pessoas que dependem dela. Isso envolve a implementação efetiva de leis ambientais, o fortalecimento da fiscalização e o apoio às comunidades locais para que possam se sustentar de maneira sustentável, sem recorrer ao garimpo ilegal.\n</html>");
+        novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel2.setForeground(new Color(83, 83, 83));
+        novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+
+        // Adiciona a Label1 ao JPanel
+        panel1.add(label);
         // Adiciona a Label2 ao JPanel
         panel1.add(novaLabel);
+        // Adiciona a Label1 ao JPanel
+        panel1.add(novaLabel2);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels
