@@ -37,11 +37,17 @@ public class janela6 extends JFrame {
         menuFechar.add(fecharAplicacaoItem);
         barraMenu.add(menuFechar);
 
-        // Criação do JPanel
-        JPanel panel1 = new JPanel();
-        panel1.setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
-        panel1.setBackground(new Color(236, 236, 236));
+        JPanel panel1 = new JPanel(new GridBagLayout()) {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo4.png"));
+                Image image = backgroundImage.getImage();
+                g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+            }
+        };
         panel1.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Adiciona margem ao redor do painel
+        panel1.setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
 
         // Label1 - Título "O que é sustentabilidade?"
         JLabel label = new JLabel("Poluição dos Mares");
