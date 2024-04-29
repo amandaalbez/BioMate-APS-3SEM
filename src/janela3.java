@@ -47,6 +47,7 @@ public class janela3 extends JFrame {
         panel1.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Adiciona margem ao redor do painel
         panel1.setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
 
+
         //titulo - label_titulo
         JLabel label_titulo = new JLabel("Sobre os 3 R's");
         label_titulo.setFont(new Font("Calibri", Font.BOLD, 28));
@@ -80,24 +81,37 @@ public class janela3 extends JFrame {
         label_titulo2.setForeground(new Color(23,67,68));
         label_titulo2.setAlignmentX(Component.LEFT_ALIGNMENT);
         panel1.add(label_titulo2);
-        //novalabel2
-        JLabel novaLabel2 = new JLabel("<html>A reutilização contribui para recursos renováveis utilizados para fabricar cada vez mais bens de consumo, pois quando utilizamos um produto, simplesmente atribuímos mais tempo ao seu uso, prolongando sua vida útil.</html>");
+
+//novalabel2
+        JLabel novaLabel2 = new JLabel("<html>A reutilização contribui para recursos renováveis utilizados para fabricar cada vez mais bens de consumo, pois quando </html>");
         novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel2.setForeground(new Color(83, 83, 83));
         novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT);
+
         panel1.add(novaLabel2);
 
+        JLabel novaLabel21 = new JLabel("<html> utilizamos um produto, simplesmente atribuímos mais tempo ao seu uso, prolongando sua vida útil.</html>");
+        novaLabel21.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel21.setForeground(new Color(83, 83, 83));
+        novaLabel21.setAlignmentX(Component.LEFT_ALIGNMENT);
+        novaLabel21.setBorder(BorderFactory.createEmptyBorder(0, 170, 0, 0));
+        panel1.add(novaLabel21);
+
+        //subtitulo3 - label_titulo3
         //subtitulo3 - label_titulo3
         JLabel label_titulo3 = new JLabel("Reciclar");
         label_titulo3.setFont(new Font("Calibri", Font.BOLD, 20));
         label_titulo3.setForeground(new Color(23,67,68));
         label_titulo3.setAlignmentX(Component.LEFT_ALIGNMENT);
+        label_titulo3.setBorder(BorderFactory.createEmptyBorder(0, 170, 0, 0));
         panel1.add(label_titulo3);
         //novalabel2
+
         JLabel novaLabel3 = new JLabel("<html>envolve o processamento de materiais por meio de sua transformação física ou química, geralmente em forma de matéria-prima para produção de novos produtos e bens de consumo onde um produto reciclável é descartado corretamente para coleta seletiva, que se encarregará de destinar os materiais para os lugares corretos.\n</html>");
         novaLabel3.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel3.setForeground(new Color(83, 83, 83));
         novaLabel3.setAlignmentX(Component.LEFT_ALIGNMENT);
+        novaLabel3.setBorder(BorderFactory.createEmptyBorder(0, 170, 0, 0));
         panel1.add(novaLabel3);
 
 
