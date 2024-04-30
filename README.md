@@ -11,6 +11,9 @@ conceitos de Programação Orientada a Objetos (POO) em sua aplicação Java.
 <li>
   <a href="https://github.com/amandaalbez">Amanda Bezerra de Alcântara</a><br>
 </li>
+<li>
+  <a href="https://github.com/EduardoRigolin">Eduardo Rigolin</a><br>
+</li>
 
 **<h2>⚙ Tecnologia Ultilizada:</h2>**
 <div align="center">
