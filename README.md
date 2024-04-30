@@ -1,4 +1,4 @@
-# BioMate - Promovendo a Sustentabilidade 🪴💚
+# BioMate - Promovendo a Sustentabilidade 🪴
 
 **<h2>📄Resumo</h2>**
 O Bio Mate é um projeto que visa conscientizar sobre sustentabilidade, abordando
