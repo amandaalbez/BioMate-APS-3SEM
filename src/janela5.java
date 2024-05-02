@@ -42,7 +42,7 @@ public class janela5 extends JFrame {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo4.png"));
+                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo7.png"));
                 Image image = backgroundImage.getImage();
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
             }
@@ -53,7 +53,7 @@ public class janela5 extends JFrame {
         // Label1 - Título "O que é sustentabilidade?"
         JLabel label = new JLabel("Enchentes");
         label.setFont(new Font("Calibri", Font.BOLD, 28));
-        label.setForeground(new Color(0,0,0));
+        label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
         // Label 2 - Sobre sustentabilidade

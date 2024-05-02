@@ -49,14 +49,11 @@ public class janela6 extends JFrame {
         panel1.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Adiciona margem ao redor do painel
         panel1.setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
 
-        // Label1 - Título "O que é sustentabilidade?"
+        // Label1 - Título "Poluição dos Mares"
         JLabel label = new JLabel("Poluição dos Mares");
         label.setFont(new Font("Calibri", Font.BOLD, 28));
-        label.setForeground(new Color(0,0,0));
+        label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
-
-        // Adiciona a Label1 ao JPanel
-        panel1.add(label);
 
         // Label 2 - Sobre sustentabilidade
         JLabel novaLabel = new JLabel("<html>A sustentabilidade visa garantir o uso adequado<br>dos recursos naturais para as futuras gerações,<br>equilibrando o desenvolvimento econômico<br>com a preservação do meio ambiente.<br>Envolve práticas como reciclagem, reutilização<br>e economia de recursos, sendo uma ação global<br>essencial em nossas atividades diárias.</html>");
@@ -65,6 +62,7 @@ public class janela6 extends JFrame {
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
         // Adiciona a Label2 ao JPanel
+        panel1.add(label);
         panel1.add(novaLabel);
 
         // Adiciona um espaço vertical entre as labels e o botão
