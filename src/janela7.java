@@ -41,7 +41,7 @@ public class janela7 extends JFrame {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo4.png"));
+                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo8.png"));
                 Image image = backgroundImage.getImage();
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
             }
@@ -52,20 +52,32 @@ public class janela7 extends JFrame {
         // Label1 - Título "O que é sustentabilidade?"
         JLabel label = new JLabel("Queimadas");
         label.setFont(new Font("Calibri", Font.BOLD, 28));
-        label.setForeground(new Color(0,0,0));
+        label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
-        // Adiciona a Label1 ao JPanel
-        panel1.add(label);
-
         // Label 2 - Sobre sustentabilidade
-        JLabel novaLabel = new JLabel("<html>A sustentabilidade visa garantir o uso adequado<br>dos recursos naturais para as futuras gerações,<br>equilibrando o desenvolvimento econômico<br>com a preservação do meio ambiente.<br>Envolve práticas como reciclagem, reutilização<br>e economia de recursos, sendo uma ação global<br>essencial em nossas atividades diárias.</html>");
+        JLabel novaLabel = new JLabel("<html>Geralmente elas ocorrem nos períodos de estiagem que se inicia no mês de maio e pode seguir até outubro, porém <br>muitas vezes esses incêndios podem ser causados por criminosos, que iniciam focos de incêndios que acabam se alastrando para regiões de mata e pastos.\n</html>");
         novaLabel.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
-        // Adiciona a Label2 ao JPanel
+        // Label 3 - Sobre sustentabilidade
+        JLabel novaLabel1 = new JLabel("<html>Essas ações podem causar diversos problemas graves para a fauna e flora daquele local, já que os mesmos contribuem para a diminuição da qualidade do solo e também do ar daquela região, causando doenças respiratórias até mesmo nos seres humanos.</html>");
+        novaLabel1.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel1.setForeground(new Color(83, 83, 83));
+        novaLabel1.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+
+        // Label 3 - Sobre sustentabilidade
+        JLabel novaLabel2 = new JLabel("<html>Para evitar queimadas, é crucial investir em educação ambiental, fiscalização, leis restritivas e manejo do fogo. Além disso, é importante construir infraestrutura de proteção, envolver a comunidade, emitir alertas antecipados e utilizar tecnologia avançada. A cooperação internacional e a manutenção das áreas verdes também são essenciais. Com essas medidas, é possível reduzir o risco de queimadas e proteger o meio ambiente e as pessoas.</html>");
+        novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel2.setForeground(new Color(83, 83, 83));
+        novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+
+        // Adiciona as Labels ao JPanel
+        panel1.add(label);
         panel1.add(novaLabel);
+        panel1.add(novaLabel1);
+        panel1.add(novaLabel2);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels
