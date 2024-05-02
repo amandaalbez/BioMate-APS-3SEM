@@ -41,7 +41,7 @@ public class janela6 extends JFrame {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo4.png"));
+                ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo9.png"));
                 Image image = backgroundImage.getImage();
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
             }
