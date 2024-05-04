@@ -61,6 +61,12 @@ public class janela4 extends JFrame {
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
+        // Label2 - Título "Solução"
+        JLabel label2 = new JLabel("<html>Solução</html>");
+        label2.setFont(new Font("Calibri", Font.BOLD, 22));
+        label2.setForeground(new Color(23,67,68));
+        label2.setAlignmentX(Component.LEFT_ALIGNMENT);
+
         // Label 3 -
         JLabel novaLabel2 = new JLabel("<html>Combater o garimpo ilegal na Amazônia não é apenas uma questão ambiental, mas também uma questão de justiça social e respeito aos direitos humanos. É essencial que governos, organizações não governamentais e a sociedade em geral se unam para proteger a Amazônia e garantir o sustento e o bem-estar das pessoas que dependem dela. Isso envolve a implementação efetiva de leis ambientais, o fortalecimento da fiscalização e o apoio às comunidades locais para que possam se sustentar de maneira sustentável, sem recorrer ao garimpo ilegal.\n</html>");
         novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
@@ -69,10 +75,13 @@ public class janela4 extends JFrame {
 
         // Adiciona a Label1 ao JPanel
         panel1.add(label);
-        // Adiciona a Label2 ao JPanel
+        // Adiciona a novalabel ao JPanel
         panel1.add(novaLabel);
         // Adiciona a Label1 ao JPanel
+        panel1.add(label2);
+        // Adiciona a novalabel2 ao JPanel
         panel1.add(novaLabel2);
+
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels

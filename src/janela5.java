@@ -56,29 +56,48 @@ public class janela5 extends JFrame {
         label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
-        // Label 2 - Sobre sustentabilidade
+        // novaLabel - Sobre sustentabilidade
         JLabel novaLabel = new JLabel("<html>As enchentes são eventos naturais que ocorrem quando há um grande volume de água que excede a capacidade de absorção do solo ou a capacidade de drenagem dos sistemas fluviais, resultando no transbordamento dos rios, córregos e lagos, porém esses eventos foram potencializados por fatores humanos. </html>");
         novaLabel.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
-        // Label 3 - Sobre sustentabilidade
+        // novaLabel1 - Sobre sustentabilidade
         JLabel novaLabel1 = new JLabel("<html>As áreas urbanas são particularmente vulneráveis às enchentes devido à impermeabilização do solo causada pelo asfaltamento e construção de edifícios, dificultando  a absorção da água e muitas vezes ocorre em áreas de várzea e planícies de inundação, aumentando o risco de danos por enchentes. </html>");
         novaLabel1.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel1.setForeground(new Color(83, 83, 83));
         novaLabel1.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
-        // Label 4 - Sobre sustentabilidade
+        // novaLabel2 - Sobre sustentabilidade
         JLabel novaLabel2 = new JLabel("<html>Enchentes podem ter impactos devastadores nas áreas afetadas causando destruição de casas, infraestrutura, plantações e estradas, além de que, também podem causar a morte, ferimentos, deslocamento e problemas de saúde pública devido à contaminação da água e ao surgimento de doenças transmitidas pela água.\n</html>");
         novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel2.setForeground(new Color(83, 83, 83));
         novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+
+        // Label2 - Título "Solução"
+        JLabel label2 = new JLabel("<html>Solução</html>");
+        label2.setFont(new Font("Calibri", Font.BOLD, 22));
+        label2.setForeground(new Color(23,67,68));
+        label2.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+        // novaLabel2 - Sobre sustentabilidade
+        JLabel novaLabel3 = new JLabel("<html>Para evitar as enchentes:<br>" +
+                "1° Melhorar a drenagem urbana.<br>" +
+                "2° Proteger áreas naturais.<br>" +
+                "3° Planejar o uso do solo de forma inteligente.<br>" +
+                "4° Preparar-se com alertas e planos de evacuação.<br>" +
+                "5° Coordenar esforços de gestão de bacias hidrográficas.</html>");
+        novaLabel3.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel3.setForeground(new Color(83, 83, 83));
+        novaLabel3.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
         // Adiciona as labels ao painel
         panel1.add(label);
         panel1.add(novaLabel);
         panel1.add(novaLabel1);
         panel1.add(novaLabel2);
+        panel1.add(label2);
+        panel1.add(novaLabel3);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels

@@ -55,15 +55,26 @@ public class janela6 extends JFrame {
         label.setForeground(new Color(23,67,68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
-        // Label 2 - Sobre sustentabilidade
-        JLabel novaLabel = new JLabel("<html>A sustentabilidade visa garantir o uso adequado<br>dos recursos naturais para as futuras gerações,<br>equilibrando o desenvolvimento econômico<br>com a preservação do meio ambiente.<br>Envolve práticas como reciclagem, reutilização<br>e economia de recursos, sendo uma ação global<br>essencial em nossas atividades diárias.</html>");
+        // novaLabel - Sobre "Poluição dos Mares"
+        JLabel novaLabel = new JLabel("<html>A poluição dos mares é a introdução de substâncias ou elementos prejudiciais ao ecossistema marinho, causando danos aos organismos aquáticos, ao meio ambiente e à saúde humana. Essa poluição pode ocorrer de várias formas:</html>");
         novaLabel.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
+        // novaLabel2 - Sobre "Poluição dos Mares"
+        JLabel novaLabel2 = new JLabel("<html>1° Poluição Química: Introdução de produtos químicos industriais, pesticidas e derivados de petróleo no mar.<br>" +
+                "2° Poluição por Resíduos Sólidos: Descarte inadequado de plásticos, vidros e metais.<br>" +
+                "3° Poluição por Microplásticos: Partículas pequenas de plástico resultantes da degradação de materiais maiores.<br>" +
+                "4° Poluição Térmica: Descarte de água aquecida de usinas e navios, alterando a temperatura da água.<br>" +
+                "5° Poluição por Ruído: Interferência na comunicação de animais marinhos devido a ruídos de navios e atividades submarinas.</html>");
+        novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
+        novaLabel2.setForeground(new Color(83, 83, 83));
+        novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT);
+
         // Adiciona a Label2 ao JPanel
         panel1.add(label);
         panel1.add(novaLabel);
+        panel1.add(novaLabel2);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels
