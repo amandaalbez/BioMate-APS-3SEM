@@ -71,6 +71,23 @@ public class janela6 extends JFrame {
         novaLabel2.setForeground(new Color(83, 83, 83));
         novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT);
 
+
+        JPanel buttonPanel1 = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Align buttons to the right
+        buttonPanel1.setBackground(new Color(255, 226, 219));
+
+        JButton btn1 = createButton("Solução");
+
+        btn1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new solucao6();
+            }
+        });
+
+        buttonPanel1.add(btn1);
+        add(buttonPanel1, BorderLayout.SOUTH);
+
         // Adiciona a Label2 ao JPanel
         panel1.add(label);
         panel1.add(novaLabel);
@@ -84,6 +101,15 @@ public class janela6 extends JFrame {
 
         // Torna a janela visível
         setVisible(true);
+    }
+
+    private JButton createButton(String text) {
+        JButton button = new JButton(text);
+        button.setBackground(new Color(255, 226, 219));
+        button.setText(text);
+        button.setForeground(new Color(12,63,103));
+
+        return button;
     }
 
     public static void main(String[] args) {

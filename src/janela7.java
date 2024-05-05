@@ -67,24 +67,28 @@ public class janela7 extends JFrame {
         novaLabel1.setForeground(new Color(83, 83, 83));
         novaLabel1.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
-        // Label2 - Título "Solução"
-        JLabel label2 = new JLabel("<html>Solução</html>");
-        label2.setFont(new Font("Calibri", Font.BOLD, 22));
-        label2.setForeground(new Color(23,67,68));
-        label2.setAlignmentX(Component.LEFT_ALIGNMENT);
+        JPanel buttonPanel1 = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Align buttons to the right
+        buttonPanel1.setBackground(new Color(124, 186, 119));
 
-        // novaLabel2 - Sobre queimadas
-        JLabel novaLabel2 = new JLabel("<html>Para evitar queimadas, é crucial investir em educação ambiental, fiscalização, leis restritivas e manejo do fogo. Além disso, é importante construir infraestrutura de proteção, envolver a comunidade, emitir alertas antecipados e utilizar tecnologia avançada. A cooperação internacional e a manutenção das áreas verdes também são essenciais. Com essas medidas, é possível reduzir o risco de queimadas e proteger o meio ambiente e as pessoas.</html>");
-        novaLabel2.setFont(new Font("Calibri", Font.BOLD, 14));
-        novaLabel2.setForeground(new Color(83, 83, 83));
-        novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+        JButton btn1 = createButton("Solução");
+
+        btn1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new solucao7();
+            }
+        });
+        // Add buttons to button panel
+        buttonPanel1.add(btn1);
+
+        add(buttonPanel1, BorderLayout.SOUTH);
+
 
         // Adiciona as Labels ao JPanel
         panel1.add(label);
         panel1.add(novaLabel);
         panel1.add(novaLabel1);
-        panel1.add(label2);
-        panel1.add(novaLabel2);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels
@@ -95,6 +99,16 @@ public class janela7 extends JFrame {
         // Torna a janela visível
         setVisible(true);
     }
+
+    private JButton createButton(String text) {
+        JButton button = new JButton(text);
+        button.setBackground(new Color(124, 186, 119));
+        button.setText(text);
+        button.setForeground(new Color(23,67,68));
+
+        return button;
+    }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(janela2::new);

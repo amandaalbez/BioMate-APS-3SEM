@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.text.html.HTML;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,6 +16,7 @@ public class janela5 extends JFrame {
         this.setJMenuBar(barraMenu);
 
         JMenu menuVoltar = new JMenu("Voltar");
+        ImageIcon iconVoltar = new ImageIcon("img\\threebars_106419.png");
         JMenuItem voltar = new JMenuItem("Voltar Início");
         voltar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -24,6 +24,7 @@ public class janela5 extends JFrame {
                 new janela2(); // Abre a janela2
             }
         });
+        menuVoltar.setIcon(iconVoltar);
         menuVoltar.add(voltar);
         barraMenu.add(menuVoltar);
 
@@ -37,11 +38,12 @@ public class janela5 extends JFrame {
         menuFechar.add(fecharAplicacaoItem);
         barraMenu.add(menuFechar);
 
-        // Criação do JPanel
+        // Criação do JPanel com fundo transparente
         JPanel panel1 = new JPanel(new GridBagLayout()) {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
+                setOpaque(false); // Make the panel transparent
                 ImageIcon backgroundImage = new ImageIcon(janela2.class.getResource("img\\fundo7.png"));
                 Image image = backgroundImage.getImage();
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
@@ -53,7 +55,7 @@ public class janela5 extends JFrame {
         // Label1 - Título "O que é sustentabilidade?"
         JLabel label = new JLabel("Enchentes");
         label.setFont(new Font("Calibri", Font.BOLD, 28));
-        label.setForeground(new Color(23,67,68));
+        label.setForeground(new Color(23, 67, 68));
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
         // novaLabel - Sobre sustentabilidade
@@ -74,30 +76,27 @@ public class janela5 extends JFrame {
         novaLabel2.setForeground(new Color(83, 83, 83));
         novaLabel2.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
 
-        // Label2 - Título "Solução"
-        JLabel label2 = new JLabel("<html>Solução</html>");
-        label2.setFont(new Font("Calibri", Font.BOLD, 22));
-        label2.setForeground(new Color(23,67,68));
-        label2.setAlignmentX(Component.LEFT_ALIGNMENT);
+        // Criação dos botões btn1, btn2 e btn3
+        JPanel buttonPanel1 = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Align buttons to the right
+        buttonPanel1.setBackground(new Color(54, 181, 212));
 
-        // novaLabel2 - Sobre sustentabilidade
-        JLabel novaLabel3 = new JLabel("<html>Para evitar as enchentes:<br>" +
-                "1° Melhorar a drenagem urbana.<br>" +
-                "2° Proteger áreas naturais.<br>" +
-                "3° Planejar o uso do solo de forma inteligente.<br>" +
-                "4° Preparar-se com alertas e planos de evacuação.<br>" +
-                "5° Coordenar esforços de gestão de bacias hidrográficas.</html>");
-        novaLabel3.setFont(new Font("Calibri", Font.BOLD, 14));
-        novaLabel3.setForeground(new Color(83, 83, 83));
-        novaLabel3.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
+        JButton btn1 = createButton("Solução");
+
+        btn1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new Solucao5();
+            }
+        });
+        // Add buttons to button panel
+        buttonPanel1.add(btn1);
 
         // Adiciona as labels ao painel
         panel1.add(label);
         panel1.add(novaLabel);
         panel1.add(novaLabel1);
         panel1.add(novaLabel2);
-        panel1.add(label2);
-        panel1.add(novaLabel3);
 
         // Adiciona um espaço vertical entre as labels e o botão
         panel1.add(Box.createVerticalStrut(20)); // Espaço vertical de 20 pixels
@@ -105,11 +104,23 @@ public class janela5 extends JFrame {
         // Adiciona o JPanel ao JFrame
         add(panel1);
 
-        // Torna a janela visível
+        // Add button panel to the frame
+        add(buttonPanel1, BorderLayout.SOUTH);
+
+        // Make the frame visible
         setVisible(true);
     }
 
+    private JButton createButton(String text) {
+        JButton button = new JButton(text);
+        button.setBackground(new Color(54, 181, 212));
+        button.setText(text);
+        button.setForeground(new Color(23,67,68));
+
+        return button;
+    }
+
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(janela2::new);
+        SwingUtilities.invokeLater(janela5::new);
     }
 }
