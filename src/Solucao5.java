@@ -71,12 +71,7 @@ public class Solucao5 extends JFrame {
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
         // novaLabel2 - Sobre sustentabilidade
-        JLabel novaLabel3 = new JLabel("<html>Para evitar as enchentes:<br>" +
-                "1° Melhorar a drenagem urbana.<br>" +
-                "2° Proteger áreas naturais.<br>" +
-                "3° Planejar o uso do solo de forma inteligente.<br>" +
-                "4° Preparar-se com alertas e planos de evacuação.<br>" +
-                "5° Coordenar esforços de gestão de bacias hidrográficas.</html>");
+        JLabel novaLabel3 = new JLabel("<html>Uma solução para lidar com enchentes inclui uma abordagem integrada que envolve medidas de prevenção, mitigação e resposta. Aqui estão algumas sugestões:<br> 1. Gerenciamento de bacias hidrográficas: Implementar práticas de gestão sustentável de bacias hidrográficas, como reflorestamento de áreas degradadas, conservação de áreas úmidas e controle de erosão, para reduzir o escoamento superficial e melhorar a infiltração da água no solo. <br>2. Infraestrutura verde: Investir em infraestrutura verde, como parques urbanos, áreas de retenção de água e sistemas de drenagem sustentável, que ajudam a reduzir o impacto das enchentes, absorvendo e armazenando água durante períodos de chuva intensa.<br> 3. Zonamento e planejamento urbano: Adotar políticas de zonamento e planejamento urbano que limitem o desenvolvimento em áreas de risco de enchentes e incentivem a construção de infraestrutura resiliente, como diques e comportas, em áreas vulneráveis. <br>4. Alerta precoce e evacuação: Implementar sistemas de alerta precoce eficazes para fornecer avisos às comunidades em risco de enchentes, permitindo evacuações seguras e oportunas.<br>5. Educação e conscientização pública: Promover a conscientização sobre os riscos associados às enchentes e fornecer educação sobre medidas de preparação e resposta adequadas, incluindo a importância de manter vias de evacuação desobstruídas e ter kits de emergência.</html>");
         novaLabel3.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel3.setForeground(new Color(83, 83, 83));
         novaLabel3.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel

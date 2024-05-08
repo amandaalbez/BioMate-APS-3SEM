@@ -115,25 +115,6 @@ public class janela3 extends JFrame {
         panel1.add(label_titulo3);
         panel1.add(novaLabel3);
 
-
-        //Botão Solução
-        JPanel buttonPanel1 = new JPanel(new FlowLayout(FlowLayout.RIGHT)); // Alinha o botão
-        buttonPanel1.setBackground(new Color(124, 186, 119));
-
-        JButton btn1 = createButton("Solução");
-
-        btn1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-                new solucao3();
-            }
-        });
-        // Add buttons to button panel
-        buttonPanel1.add(btn1);
-
-        add(buttonPanel1, BorderLayout.SOUTH);
-
         panel1.add(Box.createVerticalStrut(20));
 
         add(panel1);

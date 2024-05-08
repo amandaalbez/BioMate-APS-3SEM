@@ -56,7 +56,11 @@ public class janela4 extends JFrame {
         label.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da label
 
         // Label 2 - Sobre Garimpo ilegal
-        JLabel novaLabel = new JLabel("<html>O garimpo ilegal na Amazônia é uma atividade que tem causado sérios danos ao meio ambiente e à vida de muitas pessoas que dependem da floresta para sobreviver. É uma prática onde pessoas exploram áreas de forma não autorizada, muitas vezes sem considerar os impactos ambientais e sociais.\n</html>");
+        JLabel novaLabel = new JLabel("<html>O problema do garimpo ilegal na Amazônia é uma questão complexa que envolve não apenas danos ambientais, mas também impactos sociais e econômicos profundos. Esse tipo de atividade ilegal consiste na extração de minerais, como ouro, diamantes e outros recursos naturais, sem a devida autorização ou seguindo regulamentações ambientais.\n" +
+                "\n" +
+                "Primeiramente, é importante destacar os danos ambientais causados pelo garimpo ilegal. A Amazônia é uma das áreas mais ricas em biodiversidade do mundo, abrigando milhões de espécies vegetais e animais. No entanto, a prática do garimpo ilegal resulta na destruição de vastas áreas de floresta, poluição dos rios com mercúrio e outros produtos químicos tóxicos utilizados no processo de extração, além do desequilíbrio ecológico que afeta toda a região.\n" +
+                "\n" +
+                "Além disso, o garimpo ilegal também tem impactos sociais significativos. Muitas vezes, os garimpeiros são pessoas em situação de vulnerabilidade econômica, atraídas pela promessa de lucro rápido. No entanto, esses trabalhadores enfrentam condições precárias de trabalho, violência, exploração e até mesmo conflitos com povos indígenas que habitam as áreas afetadas.</html>");
         novaLabel.setFont(new Font("Calibri", Font.BOLD, 14));
         novaLabel.setForeground(new Color(83, 83, 83));
         novaLabel.setAlignmentX(Component.LEFT_ALIGNMENT); // Define o alinhamento horizontal da novaLabel
