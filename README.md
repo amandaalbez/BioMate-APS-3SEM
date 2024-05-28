@@ -28,7 +28,7 @@ conceitos de Programação Orientada a Objetos (POO) em sua aplicação Java.
 ![3r's](https://github.com/amandaalbez/BioMate-APS-3SEM/assets/104281621/d02853c9-855f-44c6-8a9e-cbd1df173f82)
 
 **<h2>🌲 Janela Sobre Garimpo Ilegal</h2>**
-
+![Garimpo](https://github.com/amandaalbez/BioMate-APS-3SEM/assets/104281621/6c1b1984-d254-48ad-9629-d1572427ad93)
 
 **<h2>⚙ Tecnologia Ultilizada:</h2>**
 <div align="center">
